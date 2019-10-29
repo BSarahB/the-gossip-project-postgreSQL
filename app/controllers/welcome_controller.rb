@@ -8,14 +8,15 @@ class WelcomeController < ApplicationController
 
   def show_gossip
   	  	puts @all_gossips = Gossip.all
+
+
   end
 
-  #def display_gossip
-	#	@gossip = Gossip.find(params[:gossip_id])
- # end
+  def display_gossip
+    @gossip = Gossip.find(params[:id])
+  end
 
  # def display_user
   #		@user = User.find(params[:user_id])
-#		@gossips_user = Gossip.where(user: @user)
   #end
 end

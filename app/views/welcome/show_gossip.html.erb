@@ -12,7 +12,7 @@
             <div class="card-body">
              Titre du gossip
               <h5 class="card-title"><%= gossip.title %></h5>
-              
+               <%= link_to 'Voir', welcome_display_gossip_path(:id => gossip.id), class: 'btn btn-secondary bg-info' %>
             </div>
           </div>
         <% end %>

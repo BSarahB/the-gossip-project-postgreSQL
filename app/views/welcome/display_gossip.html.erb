@@ -1,2 +1,16 @@
-<h1>Welcome#display_gossip</h1>
-<p>Find me in app/views/welcome/display_gossip.html.erb</p>
+<html>
+  <title>
+      Page potin
+  </title>
+
+  <body>
+      <h3>PAGE POTIN </h3>
+      <p>Voici la page du potin n <%=@gossip.id%> </p> 
+      <p>Son auteur: ==<%= @gossip.user.first_name %>==<br/></p>
+      <p>Le contenu du potin: ==<%= @gossip.content %>==
+      </p>
+      cree le <%= @gossip.created_at %>
+      <br/>
+      <a href="/">Lien pour revenir à la page des potins</a>
+  </body>
+</html>
