@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'welcome/show_gossip'
   get 'welcome/display_gossip'
   get 'welcome/display_user'
-  get 'contact/index'
-  get 'team/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'welcome/:first_name', to: 'welcome#show' #route dynamique
+  get '/contact', to: 'contact#index' 
+  get '/team', to: 'team#index'
+  
 end
